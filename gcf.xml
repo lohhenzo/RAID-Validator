@@ -1,0 +1,543 @@
+<GCF>
+  <MSGID>11bc012d4a35910d92a14c9fd3ac3da6c9</MSGID>
+  <MSGVER>1.0</MSGVER>
+  <CREATED>04/10/2015 03:15:14</CREATED>
+  <MSGTYP>GCF</MSGTYP>
+  <SENDID>O2_FOXCONN_DAO</SENDID>
+  <RECEID>FOXCONN_DAO</RECEID>
+  <STATUS>Pass</STATUS>
+  <STATUSCODE>0</STATUSCODE>
+  <STATUSREASON>
+  </STATUSREASON>
+  <VENDORWORKORDERID>20674994370</VENDORWORKORDERID>
+  <TIEGROUP>1</TIEGROUP>
+  <ORDFLAG>NEW</ORDFLAG>
+  <BUSUNITID>11</BUSUNITID>
+  <GPO_ORDER>686409167</GPO_ORDER>
+  <SALESORDNUM>805668866</SALESORDNUM>
+  <CUSNUM>039200734</CUSNUM>
+  <CTOMOD>CTO</CTOMOD>
+  <REGION>DAO</REGION>
+  <PRODUCTIONLEVEL>Production</PRODUCTIONLEVEL>
+  <DATACONTAINERS>
+    <CONTAINER name="basevalidation" type="xml" version="1.2.0.0">
+      <ProcessResults>
+      </ProcessResults>
+    </CONTAINER>
+    <CONTAINER name="specialization" type="xml" version="1.2.0.0">
+      <ProcessResults>
+      </ProcessResults>
+    </CONTAINER>
+    <CONTAINER name="preTestSI" type="xml" version="1.2.0.0">
+      <ProcessResults>
+      </ProcessResults>
+    </CONTAINER>
+    <CONTAINER name="systemheader" type="xml" version="1.1.0.0">
+      <HEADERATTRIBUTES>
+        <ATTRIBUTE name="lang" value="US"/>
+        <ATTRIBUTE name="destination" value="US"/>
+        <ATTRIBUTE name="siaccount" value=""/>
+        <ATTRIBUTE name="model" value="PER320"/>
+        <ATTRIBUTE name="family" value="DEFY"/>
+        <ATTRIBUTE name="chassis" value="PER320"/>
+        <ATTRIBUTE name="lob" value="SERVER"/>
+      </HEADERATTRIBUTES>
+    </CONTAINER>
+    <CONTAINER name="podlabeling" type="xml" version="1.0.0.0">
+      <DRIVES>
+        <PART description="HD,300G,SAS6,10K,2.5,S-LIT,E/C" partNumber="PGHJG" partType="Part" sdrType="hard_drive">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="capacity(MB)" value="300000"/>
+            <ATTRIBUTE key="encryption_enabled" value="NO"/>
+            <ATTRIBUTE key="interface" value="SAS"/>
+            <ATTRIBUTE key="spindle_speed(RPM)" value="10000"/>
+            <ATTRIBUTE key="transfer_rate" value="6"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="HD,300G,SAS6,10K,2.5,S-LIT,E/C" partNumber="PGHJG" partType="Part" sdrType="hard_drive">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="capacity(MB)" value="300000"/>
+            <ATTRIBUTE key="encryption_enabled" value="NO"/>
+            <ATTRIBUTE key="interface" value="SAS"/>
+            <ATTRIBUTE key="spindle_speed(RPM)" value="10000"/>
+            <ATTRIBUTE key="transfer_rate" value="6"/>
+          </ATTRIBUTES>
+        </PART>
+      </DRIVES>
+    </CONTAINER>
+    <CONTAINER name="imagedata" type="xml" version="1.3.0.0">
+      <IMAGE imageGroup="IMAGEGROUP01" imageName="btoapp64817_06S001.img" osLanguage="ENG" osType="NOS" osVersion="OSVERSION01">
+        <BPTOKEN description="MASER" partNumber="DXPJV"/>
+        <BPTOKEN description="MASER" partNumber="PNGTK"/>
+        <BPTOKEN description="MASER" partNumber="32T0N"/>
+        <BPTOKEN description="LICENSING" partNumber="0JDWX"/>
+        <BPTOKEN description="LICENSING" partNumber="81J34"/>
+        <BPTOKEN description="MASER" partNumber="949X5"/>
+        <BPTOKEN description="NOS" partNumber="1U112"/>
+        <BPTOKEN description="OSL-ENG" partNumber="1U112"/>
+        <BPTOKEN description="TITAN" partNumber="1U112"/>
+      </IMAGE>
+    </CONTAINER>
+    <CONTAINER name="legacyfiles" type="xml" version="1.2.0.0">
+      <ProcessResults>
+      </ProcessResults>
+    </CONTAINER>
+    <CONTAINER name="legacybar" type="xml" version="1.2.0.0">
+      <ProcessResults>
+      </ProcessResults>
+    </CONTAINER>
+    <CONTAINER name="legacysdr" type="xml" version="1.2.0.0">
+      <ProcessResults>
+      </ProcessResults>
+    </CONTAINER>
+    <CONTAINER name="legacydjs" type="xml" version="1.2.0.0">
+      <ProcessResults>
+      </ProcessResults>
+    </CONTAINER>
+    <CONTAINER name="memoryconfiguration" type="xml" version="1.0.0.0">
+      <DIMMS>
+        <DIMM>
+          <ATTRIBUTE key="index" value="0"/>
+          <ATTRIBUTE key="partNumber" value="N1TP1"/>
+          <ATTRIBUTE key="riser" value=""/>
+          <ATTRIBUTE key="riserslot" value="A1"/>
+          <ATTRIBUTE key="error_handling" value="ECC"/>
+          <ATTRIBUTE key="memory_rank" value="SR"/>
+          <ATTRIBUTE key="memory_type" value="RDIMM"/>
+          <ATTRIBUTE key="memory_width" value="8"/>
+          <ATTRIBUTE key="package_type" value="DIMM"/>
+          <ATTRIBUTE key="size(MB)" value="4096"/>
+          <ATTRIBUTE key="speed(MHz)" value="1600"/>
+          <ATTRIBUTE key="sdrType" value="system_memory_module"/>
+        </DIMM>
+        <DIMM>
+          <ATTRIBUTE key="index" value="1"/>
+          <ATTRIBUTE key="partNumber" value="N1TP1"/>
+          <ATTRIBUTE key="riser" value=""/>
+          <ATTRIBUTE key="riserslot" value="A2"/>
+          <ATTRIBUTE key="error_handling" value="ECC"/>
+          <ATTRIBUTE key="memory_rank" value="SR"/>
+          <ATTRIBUTE key="memory_type" value="RDIMM"/>
+          <ATTRIBUTE key="memory_width" value="8"/>
+          <ATTRIBUTE key="package_type" value="DIMM"/>
+          <ATTRIBUTE key="size(MB)" value="4096"/>
+          <ATTRIBUTE key="speed(MHz)" value="1600"/>
+          <ATTRIBUTE key="sdrType" value="system_memory_module"/>
+        </DIMM>
+        <DIMM>
+          <ATTRIBUTE key="index" value="2"/>
+          <ATTRIBUTE key="partNumber" value="N1TP1"/>
+          <ATTRIBUTE key="riser" value=""/>
+          <ATTRIBUTE key="riserslot" value="A3"/>
+          <ATTRIBUTE key="error_handling" value="ECC"/>
+          <ATTRIBUTE key="memory_rank" value="SR"/>
+          <ATTRIBUTE key="memory_type" value="RDIMM"/>
+          <ATTRIBUTE key="memory_width" value="8"/>
+          <ATTRIBUTE key="package_type" value="DIMM"/>
+          <ATTRIBUTE key="size(MB)" value="4096"/>
+          <ATTRIBUTE key="speed(MHz)" value="1600"/>
+          <ATTRIBUTE key="sdrType" value="system_memory_module"/>
+        </DIMM>
+      </DIMMS>
+    </CONTAINER>
+    <CONTAINER name="driveconfiguration" type="xml" version="1.0.0.0">
+      <CONTROLLERS>
+        <CONTROLLER boot_controller="yes" controller_token="H710M" partNumber="5CT6D">
+          <DRIVES>
+            <DRIVE>
+              <ATTRIBUTE key="boot_drive" value="yes"/>
+              <ATTRIBUTE key="partNumber" value="MTV7G"/>
+              <ATTRIBUTE key="driveChannelId" value="0:0"/>
+              <ATTRIBUTE key="capacity(MB)" value="300000"/>
+              <ATTRIBUTE key="encryption_enabled" value="NO"/>
+              <ATTRIBUTE key="interface" value="SAS"/>
+              <ATTRIBUTE key="spindle_speed(RPM)" value="10000"/>
+              <ATTRIBUTE key="transfer_rate" value="6"/>
+              <ATTRIBUTE key="sdrType" value="hard_drive"/>
+            </DRIVE>
+            <DRIVE>
+              <ATTRIBUTE key="boot_drive" value="yes"/>
+              <ATTRIBUTE key="partNumber" value="MTV7G"/>
+              <ATTRIBUTE key="driveChannelId" value="0:1"/>
+              <ATTRIBUTE key="capacity(MB)" value="300000"/>
+              <ATTRIBUTE key="encryption_enabled" value="NO"/>
+              <ATTRIBUTE key="interface" value="SAS"/>
+              <ATTRIBUTE key="spindle_speed(RPM)" value="10000"/>
+              <ATTRIBUTE key="transfer_rate" value="6"/>
+              <ATTRIBUTE key="sdrType" value="hard_drive"/>
+            </DRIVE>
+          </DRIVES>
+          <RAID_CONTAINERS>
+            <RAID_CONTAINER level="1" sas_id="0:0,0:1">
+              <logicaldrive id="1" size="REMAINING"/>
+            </RAID_CONTAINER>
+            <RAID_CONTAINER level="2" sas_id="0:0,0:1">
+              <logicaldrive id="1" size="REMAINING"/>
+            </RAID_CONTAINER>
+          </RAID_CONTAINERS>
+          <SPARES>
+          </SPARES>
+        </CONTROLLER>
+        <CONTROLLER boot_controller="no" controller_token="S110_6CH" partNumber="">
+          <DRIVES>
+            <DRIVE>
+              <ATTRIBUTE key="boot_drive" value="no"/>
+              <ATTRIBUTE key="partNumber" value="80N64"/>
+              <ATTRIBUTE key="driveChannelId" value="0:4"/>
+              <ATTRIBUTE key="capacity(MB)" value="680"/>
+              <ATTRIBUTE key="interface" value="SERIAL"/>
+              <ATTRIBUTE key="loading_type" value="TRAY"/>
+              <ATTRIBUTE key="model" value="DS-8DBSH"/>
+              <ATTRIBUTE key="sampling_rate" value="8X"/>
+              <ATTRIBUTE key="vendor" value="PLDS"/>
+              <ATTRIBUTE key="sdrType" value="dvd_drive"/>
+            </DRIVE>
+          </DRIVES>
+          <RAID_CONTAINERS>
+          </RAID_CONTAINERS>
+          <SPARES>
+          </SPARES>
+        </CONTROLLER>
+      </CONTROLLERS>
+    </CONTAINER>
+    <CONTAINER name="partsdata" type="xml" version="1.3.0.0">
+      <PARTS>
+        <PART description="BASE,SV,PER320,OEM" partNumber="RHWYW" partType="OTHER" sdrType="base">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="1st_embedded_network_model" value="BCM5720"/>
+            <ATTRIBUTE key="1st_embedded_network_vendor" value="BROADCOM"/>
+            <ATTRIBUTE key="chassis_type" value="PER320"/>
+            <ATTRIBUTE key="dell_model_name" value="PER320"/>
+            <ATTRIBUTE key="embedded_video_model" value="G200eR_Video_Controller"/>
+            <ATTRIBUTE key="embedded_video_vendor" value="MATROX"/>
+            <ATTRIBUTE key="family" value="DEFY"/>
+            <ATTRIBUTE key="memory_layout_scheme" value="NONE"/>
+            <ATTRIBUTE key="number_of_parallel_ports" value="0"/>
+            <ATTRIBUTE key="number_of_prepopulated_sockets" value="0"/>
+            <ATTRIBUTE key="number_of_processor_sockets" value="1"/>
+            <ATTRIBUTE key="number_of_serial_ports" value="1"/>
+            <ATTRIBUTE key="video_memory_size(MB)" value="16"/>
+          </ATTRIBUTES>
+          <EMBEDDED_PARTS>
+            <EMBEDDED_PART sdrType="embedded_drive_controller">
+              <ATTRIBUTES>
+                <ATTRIBUTE key="controller_token" value="S110_6CH"/>
+                <ATTRIBUTE key="interface" value="SERIAL"/>
+              </ATTRIBUTES>
+            </EMBEDDED_PART>
+          </EMBEDDED_PARTS>
+        </PART>
+        <PART description="SRV,MZR,DIAGS,SV" partNumber="DXPJV" partType="SRV" sdrType=""/>
+        <PART description="SRV,MZR,DRVS,SV" partNumber="PNGTK" partType="SRV" sdrType=""/>
+        <PART description="INFO,MZR,SV" partNumber="Y634J" partType="INFO" sdrType=""/>
+        <PART description="SRV,MZR,UEFI,12G" partNumber="32T0N" partType="SRV" sdrType=""/>
+        <PART description="INFO,RYLTY,BASE,AVOCENT" partNumber="CFFPK" partType="INFO" sdrType=""/>
+        <PART description="INFO,RYLTY,S1X0,OPROM,12G/13G" partNumber="3PF0C" partType="INFO" sdrType=""/>
+        <PART description="INFO,RYLTY,ENT,NM,INTEL" partNumber="99GM6" partType="INFO" sdrType=""/>
+        <PART description="SRV,SW,ESG,PWREDG,CS,R320" partNumber="KG5TY" partType="SRV" sdrType=""/>
+        <PART description="SRV,DRVR,SAS,PERC S110,R320" partNumber="KM12C" partType="SRV" sdrType=""/>
+        <PART description="SRV,SW,NTWK,BCOM,V18.4,Q3FY15" partNumber="T7Y8N" partType="SRV" sdrType=""/>
+        <PART description="SRV,DRVR,DELL BKPLN" partNumber="WH190" partType="SRV" sdrType=""/>
+        <PART description="DIAG,DIAGS,WBDD,FCTRY" partNumber="X40DX" partType="OTHER" sdrType=""/>
+        <PART description="SRV,SW,ESG,PWREDG,VID,R320" partNumber="YK2G0" partType="SRV" sdrType=""/>
+        <PART description="INSTR,TRIG,SVC TAG" partNumber="T845M" partType="OTHER" sdrType=""/>
+        <PART description="INFO,VERIFY-IDM-INSTALL,OEM" partNumber="V0R9J" partType="INFO" sdrType=""/>
+        <PART description="LBL,REG,SIDE,UNIV,BLNK,V2" partNumber="JD509" partType="OTHER" sdrType=""/>
+        <PART description="LBL,BRCD,TRACK,SYS,GNRC" partNumber="23503" partType="OTHER" sdrType=""/>
+        <PART description="INFO,SW,UPTN,UPG,SV" partNumber="2751P" partType="INFO" sdrType=""/>
+        <PART description="INFO,LBL,BLACK EST" partNumber="C108D" partType="INFO" sdrType=""/>
+        <PART description="INFO,64-BIT,UEFI-MFG,PROCESS" partNumber="DF3MX" partType="INFO" sdrType=""/>
+        <PART description="INFO,LBL,MINI-XPRS-SRVC-TAG" partNumber="GD720" partType="INFO" sdrType=""/>
+        <PART description="MOD,PWA,PLN,SV,TRPM,PER320,V2" partNumber="VJ84C" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="INFO,SRVR,TRPM,ROW,PWREDG" partNumber="CX523" partType="INFO" sdrType=""/>
+        <PART description="ASSY,PWA,PLN,SV,TRPM,PER320,V4" partNumber="KM5PX" partType="OTHER" sdrType=""/>
+        <PART description="MOD,CHAS,4HD,HPLG HD,PER320" partNumber="XRJ01" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,CARR,MTG,BLNK,HD,3.5,V5" partNumber="4F7V1" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,CARR,MTG,BLNK,HD,3.5,V5" partNumber="4F7V1" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,CHAS,SYSM,4HPLGHD,R320,V2" partNumber="JGJWP" partType="OTHER" sdrType="backplane">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="device_connectors" value="4"/>
+            <ATTRIBUTE key="hd_form_factor" value="3.5"/>
+            <ATTRIBUTE key="interface" value="SAS"/>
+            <ATTRIBUTE key="split" value="no"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="MOD,CBL,SAS,4HPLG,R420,R320" partNumber="61XRP" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,CBL,MB,BKPLN,SAS,2,R4/320" partNumber="14P33" partType="OTHER" sdrType=""/>
+        <PART description="SHIP,R320,DAO,OEM" partNumber="K43HP" partType="OTHER" sdrType=""/>
+        <PART description="INFO,NO ITEM" partNumber="01323" partType="INFO" sdrType=""/>
+        <PART description="INFO, NO DELL DIRECT CATALOG" partNumber="08123" partType="INFO" sdrType=""/>
+        <PART description="PREP MTL, DEV, SRV, INCRS #1" partNumber="2260R" partType="OTHER" sdrType=""/>
+        <PART description="LBL,BRCD,SYS BOX,GNRC" partNumber="23501" partType="OTHER" sdrType=""/>
+        <PART description="KIT,SHP MTL,COMBO,S/D,PL" partNumber="8GDJT" partType="OTHER" sdrType=""/>
+        <PART description="INFO,SERVER IDENTIFIER,WMS" partNumber="61275" partType="INFO" sdrType=""/>
+        <PART description="PREP MTL, DEV, SRV, INCRS #2" partNumber="7260R" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,LBL,REG,BIS,PKG,SV,JSD2" partNumber="794M9" partType="OTHER" sdrType=""/>
+        <PART description="INFO,GENERIC BOX REQUIRED" partNumber="8J142" partType="INFO" sdrType=""/>
+        <PART description="ASSY,LBL,FCC2,R320,DAO,OEM,V2" partNumber="K4H6N" partType="OTHER" sdrType=""/>
+        <PART description="GDE,PROD,INFO,PWREDG,ROW,OEM" partNumber="RGD3K" partType="OTHER" sdrType=""/>
+        <PART description="MOD,PRC,E52430V2,2.5,IVY,80W" partNumber="DWPDP" partType="OTHER" sdrType=""/>
+        <PART description="PRC,E52430V2,2.5,15M,IVY,S1" partNumber="2M8D1" partType="OTHER" sdrType="processor">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="cpu_name" value="E5-2430V2"/>
+            <ATTRIBUTE key="extension" value="64"/>
+            <ATTRIBUTE key="integrated_gpu" value="NO"/>
+            <ATTRIBUTE key="L2_cache_size(K)" value="1536"/>
+            <ATTRIBUTE key="L3_cache_size(K)" value="15360"/>
+            <ATTRIBUTE key="number_of_cores" value="6"/>
+            <ATTRIBUTE key="processor_family" value="IVY_BRIDGE"/>
+            <ATTRIBUTE key="processor_speed(MHz)" value="2500"/>
+            <ATTRIBUTE key="qpi_speed/front_bus_speed(MHz)" value="7200"/>
+            <ATTRIBUTE key="socket_type" value="B2"/>
+            <ATTRIBUTE key="SpeedStep_support" value="YES"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="LBL,INTEL,SRVR,XMN2" partNumber="2XTCC" partType="OTHER" sdrType=""/>
+        <PART description="MOD,THRM,5X2.9X1,S,D,S" partNumber="R1TYH" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,HTSNK,5X2.9X1,R520/420320" partNumber="XHMDT" partType="OTHER" sdrType=""/>
+        <PART description="MOD,INFO,ORD-ENTRY,1600 RDIMMS" partNumber="FJD95" partType="OTHER" sdrType=""/>
+        <PART description="INFO,ORD-ENTRY,1600MHZ,RDIMMS" partNumber="GNF74" partType="INFO" sdrType=""/>
+        <PART description="MOD,INFO,MEM,OPTIMIZED" partNumber="TTPH9" partType="OTHER" sdrType=""/>
+        <PART description="INFO,MEM,OPTIMIZED" partNumber="74FPM" partType="INFO" sdrType="memory_population_mode">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="population_mode" value="Optimized"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="MOD,DIMM,4GB,1R,1X4G,RDIMM,LV" partNumber="TFR65" partType="OTHER" sdrType=""/>
+        <PART description="INFO,MEM,LV" partNumber="2WY0H" partType="INFO" sdrType=""/>
+        <PART description="DIMM,4GB,1600,1RX8,4G,DDR3L,R" partNumber="N1TP1" partType="OTHER" sdrType="system_memory_module">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="error_handling" value="ECC"/>
+            <ATTRIBUTE key="memory_rank" value="SR"/>
+            <ATTRIBUTE key="memory_type" value="RDIMM"/>
+            <ATTRIBUTE key="memory_width" value="8"/>
+            <ATTRIBUTE key="package_type" value="DIMM"/>
+            <ATTRIBUTE key="size(MB)" value="4096"/>
+            <ATTRIBUTE key="speed(MHz)" value="1600"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="MOD,DIMM,4GB,1R,1X4G,RDIMM,LV" partNumber="TFR65" partType="OTHER" sdrType=""/>
+        <PART description="INFO,MEM,LV" partNumber="2WY0H" partType="INFO" sdrType=""/>
+        <PART description="DIMM,4GB,1600,1RX8,4G,DDR3L,R" partNumber="N1TP1" partType="OTHER" sdrType="system_memory_module">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="error_handling" value="ECC"/>
+            <ATTRIBUTE key="memory_rank" value="SR"/>
+            <ATTRIBUTE key="memory_type" value="RDIMM"/>
+            <ATTRIBUTE key="memory_width" value="8"/>
+            <ATTRIBUTE key="package_type" value="DIMM"/>
+            <ATTRIBUTE key="size(MB)" value="4096"/>
+            <ATTRIBUTE key="speed(MHz)" value="1600"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="MOD,DIMM,4GB,1R,1X4G,RDIMM,LV" partNumber="TFR65" partType="OTHER" sdrType=""/>
+        <PART description="INFO,MEM,LV" partNumber="2WY0H" partType="INFO" sdrType=""/>
+        <PART description="DIMM,4GB,1600,1RX8,4G,DDR3L,R" partNumber="N1TP1" partType="OTHER" sdrType="system_memory_module">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="error_handling" value="ECC"/>
+            <ATTRIBUTE key="memory_rank" value="SR"/>
+            <ATTRIBUTE key="memory_type" value="RDIMM"/>
+            <ATTRIBUTE key="memory_width" value="8"/>
+            <ATTRIBUTE key="package_type" value="DIMM"/>
+            <ATTRIBUTE key="size(MB)" value="4096"/>
+            <ATTRIBUTE key="speed(MHz)" value="1600"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="MOD,INFO,C8,ASSR1,R320" partNumber="4WN18" partType="OTHER" sdrType=""/>
+        <PART description="INFO,C8,ASSR1,R320" partNumber="1XPGY" partType="INFO" sdrType=""/>
+        <PART description="MOD,CRD,CTL,H710,512,NVD,MCRD" partNumber="KTD4F" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,CRD,CTL,H710,512,NV,MCRD" partNumber="5CT6D" partType="OTHER" sdrType="controller_card">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="controller_token" value="H710M"/>
+            <ATTRIBUTE key="deviceid" value="005B"/>
+            <ATTRIBUTE key="interface" value="SAS"/>
+            <ATTRIBUTE key="subsystemid" value="1F38"/>
+            <ATTRIBUTE key="subvendorid" value="1028"/>
+            <ATTRIBUTE key="vendorid" value="1000"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="SRV,DRVR,H710,MCRD,SAS-RAID" partNumber="CYR0V" partType="SRV" sdrType=""/>
+        <PART description="MOD,HD,300G,SAS6,DU,10K,HYB,SG" partNumber="P1WG3" partType="OTHER" sdrType=""/>
+        <PART description="INFO,BACKPLANE HD" partNumber="3556E" partType="INFO" sdrType=""/>
+        <PART description="ASSY,BRKT,MET,ADPT,2.5-3.5,V2" partNumber="9W8C4" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,CARR,HD,SAS-SATAU,3.5" partNumber="F238F" partType="OTHER" sdrType=""/>
+        <PART description="LBL,POD,HD,RECTANGULAR" partNumber="FM833" partType="OTHER" sdrType="drive_label">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="description" value="This label part indicates that a drive in the same"/>
+            <ATTRIBUTE key="type" value="label_required"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="HD,300G,SAS,10,2.5,T-13SE,E/C" partNumber="MTV7G" partType="OTHER" sdrType="hard_drive">
+          <ATTRIBUTES>    <ATTRIBUTE key="capacity(MB)" value="300000"/>    <ATTRIBUTE key="encryption_enabled" value="NO"/>    <ATTRIBUTE key="interface" value="SAS"/>    <ATTRIBUTE key="spindle_speed(RPM)" value="10000"/>    <ATTRIBUTE key="transfer_rate" value="6"/>  </ATTRIBUTES></PART>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="MOD,HD,300G,SAS6,DU,10K,HYB,SG" partNumber="P1WG3" partType="OTHER" sdrType=""/>
+        <PART description="INFO,BACKPLANE HD" partNumber="3556E" partType="INFO" sdrType=""/>
+        <PART description="ASSY,BRKT,MET,ADPT,2.5-3.5,V2" partNumber="9W8C4" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,CARR,HD,SAS-SATAU,3.5" partNumber="F238F" partType="OTHER" sdrType=""/>
+        <PART description="LBL,POD,HD,RECTANGULAR" partNumber="FM833" partType="OTHER" sdrType="drive_label">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="description" value="This label part indicates that a drive in the same"/>
+            <ATTRIBUTE key="type" value="label_required"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="HD,300G,SAS,10,2.5,T-13SE,E/C" partNumber="MTV7G" partType="OTHER" sdrType="hard_drive">
+          <ATTRIBUTES>    <ATTRIBUTE key="capacity(MB)" value="300000"/>    <ATTRIBUTE key="encryption_enabled" value="NO"/>    <ATTRIBUTE key="interface" value="SAS"/>    <ATTRIBUTE key="spindle_speed(RPM)" value="10000"/>    <ATTRIBUTE key="transfer_rate" value="6"/>  </ATTRIBUTES></PART>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.05X4.5MM,FLH,MSCR,ZPS" partNumber="R9445" partType="OTHER" sdrType=""/>
+        <PART description="MOD-SRV,IDRAC7,ENT,PERP" partNumber="HD71W" partType="OTHER" sdrType=""/>
+        <PART description="SRV,LKEY,IDRAC7,ENT,PERP" partNumber="0JDWX" partType="SRV" sdrType=""/>
+        <PART description="INFO,IDRAC7,12G,VALIDATOR" partNumber="36THC" partType="INFO" sdrType=""/>
+        <PART description="SRV,LKEY,GEN,12G" partNumber="3MKMC" partType="SRV" sdrType=""/>
+        <PART description="INFO,RYLTY,EXP,UPGRD,AVOCENT" partNumber="4HHTX" partType="INFO" sdrType=""/>
+        <PART description="SRV,LICENSE ENTITLEMENT" partNumber="81J34" partType="SRV" sdrType=""/>
+        <PART description="INFO,RYLTY,ENT,INTEL" partNumber="8R9F0" partType="INFO" sdrType=""/>
+        <PART description="INFO,IDRAC7,12G,KEYINSTALLER" partNumber="R97C7" partType="INFO" sdrType=""/>
+        <PART description="MOD,PWA,RSR,IDRAC,R5/4/320" partNumber="P8K6J" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,PWA,RSR,SV,AMEA,SDK,V2" partNumber="2827M" partType="OTHER" sdrType="server_management_card">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="bus" value="PCI"/>
+            <ATTRIBUTE key="type" value="AMEA_Riser"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="MOD,INFO,LOM" partNumber="7MKKN" partType="OTHER" sdrType=""/>
+        <PART description="INFO,LOM" partNumber="W9HK9" partType="INFO" sdrType=""/>
+        <PART description="MOD,PWR SPLY,350W,RDNT,DELTA" partNumber="RG01D" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,LBL,REG,FCC1,350W,RDNT,V2" partNumber="JX21D" partType="OTHER" sdrType=""/>
+        <PART description="INFO,RDNT,PSU" partNumber="N6523" partType="INFO" sdrType=""/>
+        <PART description="PWR SPLY,350W,RDNT,DELTA" partNumber="Y8Y65" partType="OTHER" sdrType="power_supply">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="input_current_type" value="AC"/>
+            <ATTRIBUTE key="vendor" value="DELTA"/>
+            <ATTRIBUTE key="wattage" value="350"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="PWR SPLY,350W,RDNT,DELTA" partNumber="Y8Y65" partType="OTHER" sdrType="power_supply">
+          <ATTRIBUTES>
+            <ATTRIBUTE key="input_current_type" value="AC"/>
+            <ATTRIBUTE key="vendor" value="DELTA"/>
+            <ATTRIBUTE key="wattage" value="350"/>
+          </ATTRIBUTES>
+        </PART>
+        <PART description="MOD,FAN,12V,DELTA,R420/R320" partNumber="8NW8F" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,FAN,40X40X56,12V,DELTA" partNumber="HR6C0" partType="OTHER" sdrType=""/>
+        <PART description="MOD,PWA,PDB,PWR,1U,R4/320" partNumber="N61PT" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,PWA,PDB,SV, PWR,1U,R4/320" partNumber="0G8CN" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="SCR,M3X.5X5MM,HEX,PHH,TF,ZPS" partNumber="94682" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,SHRD,PLSTC,PDB,R420/R320" partNumber="9NPW3" partType="OTHER" sdrType=""/>
+        <PART description="INFO,ADD PSU FAN#1,R5/4/320" partNumber="F28RF" partType="INFO" sdrType=""/>
+        <PART description="MOD,CORD,PWR,15A,3M,C13,US" partNumber="F928P" partType="OTHER" sdrType=""/>
+        <PART description="CORD,PWR,15A125V,10FT,5-15/C13" partNumber="0R215" partType="OTHER" sdrType=""/>
+        <PART description="MOD,CORD,PWR,15A,3M,C13,US" partNumber="F928P" partType="OTHER" sdrType=""/>
+        <PART description="CORD,PWR,15A125V,10FT,5-15/C13" partNumber="0R215" partType="OTHER" sdrType=""/>
+        <PART description="MOD,INFO,ENABLE PERFORMANCE " partNumber="N754K" partType="OTHER" sdrType=""/>
+        <PART description="INFO,ENABLE PERFORMANCE MODE" partNumber="N756K" partType="INFO" sdrType=""/>
+        <PART description="MOD,RCKRL,RDYRL,1U,SL,SFF,V4" partNumber="P2MV5" partType="OTHER" sdrType=""/>
+        <PART description="KIT,RDYRL,1U,SL,SFF,KNSLD,CR" partNumber="6RTCR" partType="OTHER" sdrType=""/>
+        <PART description="MOD-BRND,PER320,BZL,4HDD,OEM" partNumber="WCHH2" partType="OTHER" sdrType=""/>
+        <PART description="INFO,SLIC,CHECKER,OEM" partNumber="2R9HR" partType="INFO" sdrType=""/>
+        <PART description="CVR,LKG,PLSTC,R720,OEM" partNumber="6R0VD" partType="OTHER" sdrType=""/>
+        <PART description="SRV,SW,OEM-ID,1.1" partNumber="949X5" partType="SRV" sdrType=""/>
+        <PART description="BDG,ASSY,CVR,TOP,11G,OEM" partNumber="H828M" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,BZL,FRT,MET,8HD,1U,OEM" partNumber="N1HHD" partType="OTHER" sdrType=""/>
+        <PART description="BDG,FIO,MASK,4HD,R420/R320,OEM" partNumber="WTJNN" partType="OTHER" sdrType=""/>
+        <PART description="MOD,DVD,SATA,12.7,PLDS,ESG" partNumber="M3ND0" partType="OTHER" sdrType=""/>
+        <PART description="ASSY,DVD,8,12.7,SATA,ESG,HLDS" partNumber="80N64" partType="OTHER" sdrType="dvd_drive">
+          <ATTRIBUTES>    <ATTRIBUTE key="capacity(MB)" value="680"/>    <ATTRIBUTE key="interface" value="SERIAL"/>    <ATTRIBUTE key="loading_type" value="TRAY"/>    <ATTRIBUTE key="model" value="DS-8DBSH"/>    <ATTRIBUTE key="sampling_rate" value="8X"/>    <ATTRIBUTE key="vendor" value="PLDS"/>  </ATTRIBUTES></PART>
+        <PART description="MOD,INFO,EDOCS-OPTION" partNumber="8213U" partType="OTHER" sdrType=""/>
+        <PART description="INFO,EDOCS-OPTION-ONLY" partNumber="7213U" partType="INFO" sdrType=""/>
+        <PART description="MOD,SW,NO-OS" partNumber="KD483" partType="OTHER" sdrType=""/>
+        <PART description="SRV,SW,DELL,NULL-OS" partNumber="1U112" partType="SRV" sdrType=""/>
+        <PART description="MOD,SW,NO,MEDIA,RHEL,6" partNumber="FTY0D" partType="OTHER" sdrType=""/>
+        <PART description="INFO,SW,NO,MEDIA" partNumber="734TT" partType="INFO" sdrType=""/>
+      </PARTS>
+    </CONTAINER>
+    <CONTAINER name="specialinstructions" type="xml" version="1.0.0.0">
+      <SpecialInstructions>
+      </SpecialInstructions>
+    </CONTAINER>
+    <CONTAINER name="sdr" type="text" version="1.0.0.1"><![CDATA[::-------------------------------------------------------
+SDR Creating Date/Time 4/10/2015 3:15:14 AM UTC
+Order Production Level: Production
+::-------------------------------------------------------
+HW snum 1000 - - NOT_SI
+HW lang US US
+HW destination US
+SW odm_package IMAGEGROUP01 NOS ENG OSVERSION01
+SW odm_image_name btoapp64817_06S001.img
+rem titan DISKPREP
+BP OSL-ENG 0/1U112
+BP NOS 0/1U112
+SI SW 1U112 SRV,SW,DELL,NULL-OS
+BP TITAN 0/1U112
+rem titan PREPUP
+rem titan EBTS
+SI SW 0JDWX SRV,LKEY,IDRAC7,ENT,PERP
+BP LICENSING 0/0JDWX
+BP MASER 0/PNGTK
+SI SW PNGTK SRV,MZR,DRVS,SV
+SI SW DXPJV SRV,MZR,DIAGS,SV
+BP MASER 0/DXPJV
+BP LICENSING 0/81J34
+SI SW 81J34 SRV,LICENSE ENTITLEMENT
+SI SW 32T0N SRV,MZR,UEFI,12G
+BP MASER 0/32T0N
+SI SW 949X5 SRV,SW,OEM-ID,1.1
+BP MASER 0/949X5
+rem titan BASE10
+HW model PER320 DEFY PER320 SERVER
+INFO Y634J INFO,MZR,SV
+INFO CFFPK INFO,RYLTY,BASE,AVOCENT
+INFO 3PF0C INFO,RYLTY,S1X0,OPROM,12G/13G
+INFO 99GM6 INFO,RYLTY,ENT,NM,INTEL
+INFO V0R9J INFO,VERIFY-IDM-INSTALL,OEM
+INFO 2751P INFO,SW,UPTN,UPG,SV
+INFO C108D INFO,LBL,BLACK EST
+INFO DF3MX INFO,64-BIT,UEFI-MFG,PROCESS
+INFO GD720 INFO,LBL,MINI-XPRS-SRVC-TAG
+INFO CX523 INFO,SRVR,TRPM,ROW,PWREDG
+INFO 01323 INFO,NO ITEM
+INFO 08123 INFO, NO DELL DIRECT CATALOG
+INFO 61275 INFO,SERVER IDENTIFIER,WMS
+INFO 8J142 INFO,GENERIC BOX REQUIRED
+INFO GNF74 INFO,ORD-ENTRY,1600MHZ,RDIMMS
+INFO 74FPM INFO,MEM,OPTIMIZED
+INFO 2WY0H INFO,MEM,LV
+INFO 2WY0H INFO,MEM,LV
+INFO 2WY0H INFO,MEM,LV
+INFO 1XPGY INFO,C8,ASSR1,R320
+INFO 3556E INFO,BACKPLANE HD
+INFO 3556E INFO,BACKPLANE HD
+INFO 36THC INFO,IDRAC7,12G,VALIDATOR
+INFO 4HHTX INFO,RYLTY,EXP,UPGRD,AVOCENT
+INFO 8R9F0 INFO,RYLTY,ENT,INTEL
+INFO R97C7 INFO,IDRAC7,12G,KEYINSTALLER
+INFO W9HK9 INFO,LOM
+INFO N6523 INFO,RDNT,PSU
+INFO F28RF INFO,ADD PSU FAN#1,R5/4/320
+INFO N756K INFO,ENABLE PERFORMANCE MODE
+INFO 2R9HR INFO,SLIC,CHECKER,OEM
+INFO 7213U INFO,EDOCS-OPTION-ONLY
+INFO 734TT INFO,SW,NO,MEDIA
+]]></CONTAINER>
+  <CONTAINER name="unitdigitalactivations" type="xml" version="1.0.0.0"><ACTIVATIONS><ACTIVATION Type="12GHardware"><Attributes><Attribute Name="LICENSETYPE" Value="Perpetual"/><Attribute Name="KEYGENERATOR" Value="iDRACLKG_A00.zip"/><Attribute Name="PURCHASEDATE" Value="2015-04-09T14:09:58-05:00"/><Attribute Name="BINDING" Value="6LDGC42"/><Attribute Name="FactoryKeyInstaller" Value="IDRAC7"/><Attribute Name="TEMPLATEFILE" Value="iDRAC7-Enterprise-Perpetual-A00.xml"/><Attribute Name="DURATION" Value="3660"/><Attribute Name="ID" Value="FD00000003743344"/></Attributes></ACTIVATION></ACTIVATIONS></CONTAINER></DATACONTAINERS>
+</GCF>
