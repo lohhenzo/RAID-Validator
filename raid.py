@@ -1,62 +1,19 @@
 """ RAID Validation.
-
 This module validate the RAID configuration from the GCF. It uses the
 RAID_CONTAINER node.
 
 Author: Lorenzo Hernandez
 Date: 04/14/2015
-
 """
 
 import xml.etree.ElementTree as ET
-from pprint import pprint
 
 def main(GCF):
-    """
-    for controller in SUT.POXML.xpath("/GCF/DATACONTAINERS/CONTAINER/CONTROLLERS/CONTROLLER"):
-        for node in controller.xpath("RAID_CONTAINERS/RAID_CONTAINER"):
-            slots = node.attrib['sas_id'].split(',')
-            try:
-                lvl = int(node.attrib['level'])
-            except Exception:
-                raise Exception('Found Invalid Raid Level in GCF %s' % node.attrib['level'])
-            if lvl in RaidRules:
-                if len(set(slots)) < RaidRules[lvl][0] or len(set(slots)) > RaidRules[lvl][1]:
-                    raise Exception('Found invalid Raid in GCF LVL:%d DRIVES:%s' % (lvl, str(set(slots))))
-            drives = []
-            for drive in controller.xpath("DRIVES/DRIVE"):
-                driveChannelId = drive.xpath("ATTRIBUTE[@key='driveChannelId']/@value", smart_strings=False)[0]
-                if driveChannelId in slots:
-                    cap = drive.xpath("ATTRIBUTE[@key='capacity(MB)']/@value", smart_strings=False)[0]
-                    try:
-                        speed = drive.xpath("ATTRIBUTE[@key='spindle_speed(RPM)']/@value", smart_strings=False)[0]
-                    except IndexError:
-                        speed = 'N/A'
-                    drives.append((cap, speed))
-
-            # test slots
-            if len(slots) != len(drives):
-                raise Exception('Missing Slots in raid conteiners (%s)' % str(slots))
-
-            # test size and speed
-            for i in range(1, len(drives)):
-                if drives[0][0] != drives[i][0]:
-                    raise Exception("different HDD Size in raid container (Level %s - Slots %s)" % (node.attrib['level'], slots))
-                elif drives[0][1] != drives[i][1]:
-                    raise Exception("different HDD Speed in raid container (Level %s - Slots %s)" % (node.attrib['level'], slots))
-    """
+    controllers = getControllers(GCF)
+    return validate(controllers)
 
 def exception(GCF):
-    """
-    Validate all the exceptions.
-    input GCF string.
-    output True/False bool.
-
-    old code:
-    for info in SUT.POPartList:
-        for name, value in info.iteritems():
-            if 'R0206' == value:
-                return True
+    """ Validate all the exceptions.
     """
     if 'R0206' in GCF:
         return True
@@ -64,16 +21,11 @@ def exception(GCF):
         return False
 
 def getControllers(GCF):
-    """
-    Parse the GCF in order to extract the controllers information.
-    (Drives and RAIDDContainers)
+    """ Parse the GCF in order to extract the controllers information.
+    (Drives and RAIDDContainers). Return a controllers list.
     node: /GCF/DATACONTAINERS/CONTAINER/CONTROLLERS/
-
-    input GCF string
-    output controllers list
     """
     root = ET.fromstring(GCF)
-
     controllers = []
     for item in root.iter('CONTROLLER'):
         controller = {
@@ -91,34 +43,36 @@ def getControllers(GCF):
             for con in raid.iter('RAID_CONTAINER'):
                 controller['raids'].append(con.attrib)
         controllers.append(controller)
-    #pprint(controllers)
 
-    print validate(controllers)
+    return controllers
 
 def validate(controllers):
-    """
-    Recursive function to validate every controller information.
-    RAID, RAIDLevel, Capacity and Speed.
-
-    input controllers [Tail] list
-    output True/False bool
+    """ Recursive function to validate every controller information.
+    RAID, RAIDLevel, Capacity and Speed. Return True if OK, else
+    return an error message.
     """
     if len(controllers) <= 0:
         return True
     else:
-        RAIDLevel = isValidRAIDLevel(controllers[0]['raids'])
-        if RAIDLevel == True: pass    
+        drives = controllers[0]['drives']
+        raids  = controllers[0]['raids']
+
+        RAIDLevel = isValidRAIDLevel(raids)
+        if RAIDLevel == True: pass
         else: return RAIDLevel
-        RAID = isValidRAID(controllers[0]['raids'])
-        if RAID == True: return validate(controllers[1:])
+
+        RAID = isValidRAID(raids)
+        if RAID == True: pass
         else: return RAID
 
-def isValidRAIDLevel(raids):
-    """
-    Evaluate the RAID level to int type, and check if exists in validRAIDLevels.
+        capacity=isSameCapacityAndSpeed(drives,raids)
+        if capacity == True: return validate(controllers[1:])
+        else: return capacity
 
-    input RAIDLevel string
-    output True/False bool
+def isValidRAIDLevel(raids):
+    """ Evaluate the RAID level to int type, and check if
+    exists in valid RAID Levels. Return True if OK, else return
+    an error message.
     """
     validRAIDLevels = [0,1,5,6,10,50,60]
     if len(raids) <= 0:
@@ -129,13 +83,9 @@ def isValidRAIDLevel(raids):
         else:
             return 'Invalid RAID level %s' % raids[0]['level']
 
-
 def isValidRAID(raids):
-    """
-    Compare slots quantity vs rules min/max.
-
-    input raids list
-    output True/False bool
+    """ Compare slots quantity vs rules min/max.
+    Return True if OK, else return an error message.
     """
     rules = {
         0: [1, 999],
@@ -154,25 +104,52 @@ def isValidRAID(raids):
         rule  = rules[level]
         if slots < rule[0] or slots > rule[1]:
             msg = (slots,rule[0],rule[1])
-            return 'Invalid RAID, %s slots, min %s - max %s' % msg 
+            return 'Invalid RAID, %s slots, min %s - max %s' % msg
         else:
             return isValidRAID(raids[1:])
 
-def isSameCapacity(drives):
+def isSameCapacityAndSpeed(drives,raids):
+    """ Check if all the HDDs in the RAID container have the
+    same capacity and speed. Return True if so, if not
+    return an error message.
     """
-    Check if all the HDDs in the controller have the same capacity.
+    if len(raids) <= 0:
+        return True
+    else:
+        slots = raids[0]['sas_id'].split(',')
+        drivesOnRAID = filter(lambda x: x['driveChannelId'] in slots, drives)
+        sameCapacity = getSameCapacity(drivesOnRAID)
+        sameSpeed    = getSameSpeed(drivesOnRAID)
 
-    input drives list
-    output True/False bool
-    """
+        if len(drivesOnRAID) != len(sameCapacity):
+            return 'Drives with diff capacity in RAID Ctrl. %s '%str(drivesOnRAID)
+        elif len(drivesOnRAID) != len(sameSpeed):
+            return 'Drives with diff speed in RAID Ctrl. %s '%str(drivesOnRAID)
+        else:
+            return isSameCapacityAndSpeed(drives,raids[1:])
 
-def isSameSpeed(drives):
+def getSameCapacity(drives):
+    """ Return a drives list of same capacity
     """
-    Check if all the HDDs in the controller have the same speed.
+    capacity = drives[0]['capacity(MB)'] # get capacity frm first drive
+    return filter(lambda x:x['capacity(MB)']==capacity,drives)
 
-    input drives list
-    output True/False bool
+def getSameSpeed(drives):
+    """ Return a drives list of same capacity if attribute
+    'spindle_speed' exists in each drive information.
+
+    Return an empty list if 'spindle_speed' exists only in
+    some drives, otherwise, return the drives list without
+    the attribute.
     """
+    try:
+        speed = drives[0]['spindle_speed(RPM)']# get speed from first drive
+        return filter(lambda x:x['spindle_speed(RPM)']== speed,drives)
+    except KeyError:
+        if len(set(map(len,drives))) > 1:
+            return []
+        else:
+            return drives
 
 
 if __name__ == '__main__':
