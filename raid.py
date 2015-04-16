@@ -74,30 +74,26 @@ def getControllers(GCF):
     """
     root = ET.fromstring(GCF)
 
-    c,d,r = ('CONTROLLER','DRIVE','RAID_CONTAINER')
-    controllers = [[x,y,z] for x in root.iter(c) for y in x.iter(d) for z in x.iter(r)]
-
-
-    pprint(controllers)
-
-    #controllers = []
-    #for item in root.iter('CONTROLLER'):
-        #controller = {
-            #'info': item.attrib,
-            #'drives': [],
-            #'raids': []
-        #}
-        #for drive in item.iter('DRIVE'):
-            #dr = {}
-            #for att in drive.iter('ATTRIBUTE'):
-                #e = att.attrib.values()
-                #dr.update({e[0]:e[1]})
-            #controller['drives'].append(dr)
-        #for raid in item.iter('RAID_CONTAINER'):
-            #for con in raid.iter('RAID_CONTAINER'):
-                #controller['raids'].append(con.attrib)
-        #controllers.append(controller)
+    controllers = []
+    for item in root.iter('CONTROLLER'):
+        controller = {
+            'info': item.attrib,
+            'drives': [],
+            'raids': []
+        }
+        for drive in item.iter('DRIVE'):
+            dr = {}
+            for att in drive.iter('ATTRIBUTE'):
+                e = att.attrib.values()
+                dr.update({e[0]:e[1]})
+            controller['drives'].append(dr)
+        for raid in item.iter('RAID_CONTAINERS'):
+            for con in raid.iter('RAID_CONTAINER'):
+                controller['raids'].append(con.attrib)
+        controllers.append(controller)
     #pprint(controllers)
+
+    print validate(controllers)
 
 def validate(controllers):
     """
@@ -107,16 +103,32 @@ def validate(controllers):
     input controllers [Tail] list
     output True/False bool
     """
-    pass
+    if len(controllers) <= 0:
+        return True
+    else:
+        RAIDLevel = isValidRAIDLevel(controllers[0]['raids'])
+        if RAIDLevel == True: pass    
+        else: return RAIDLevel
+        RAID = isValidRAID(controllers[0]['raids'])
+        if RAID == True: validate(controllers[1:])
+        else: return RAID
 
-def isValidRAIDLevel(RAIDLevel):
+def isValidRAIDLevel(raids):
     """
     Evaluate the RAID level to int type, and check if exists in validRAIDLevels.
 
     input RAIDLevel string
     output True/False bool
     """
-    #validRAIDLevels = [0,1,5,6,10,50,60]
+    validRAIDLevels = [0,1,5,6,10,50,60]
+    if len(raids) <= 0:
+        return True
+    else:
+        if int(raids[0]['level']) in validRAIDLevels:
+            return isValidRAIDLevel(raids[1:])
+        else:
+            return 'Invalid RAID level %s' % raids[0]['level']
+
 
 def isValidRAID(raids):
     """
@@ -134,7 +146,17 @@ def isValidRAID(raids):
         50: [6, 999],
         60: [8, 999]
     }
-    print rules
+    if len(raids) <= 0:
+        return True
+    else:
+        slots = len(set(raids[0]['sas_id'].split(',')))
+        level = int(raids[0]['level'])
+        rule  = rules[level]
+        if slots < rule[0] or slots > rule[1]:
+            msg = (slots,rule[0],rule[1])
+            return 'Invalid RAID, %s slots, min %s - max %s' % msg 
+        else:
+            return isValidRAID(raids[1:])
 
 def isSameCapacity(drives):
     """

@@ -171,7 +171,7 @@
             <RAID_CONTAINER level="1" sas_id="0:0,0:1">
               <logicaldrive id="1" size="REMAINING"/>
             </RAID_CONTAINER>
-            <RAID_CONTAINER level="2" sas_id="0:0,0:1">
+            <RAID_CONTAINER level="1" sas_id="0:0,0:1">
               <logicaldrive id="1" size="REMAINING"/>
             </RAID_CONTAINER>
           </RAID_CONTAINERS>
