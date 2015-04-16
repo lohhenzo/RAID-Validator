@@ -1,2 +1,2 @@
-# x2dict
-Translate an XML to a dict structure in python.
+# RAID Validator
+Read the controllers nodes from GCF. Validate the RAID containers and Drives
