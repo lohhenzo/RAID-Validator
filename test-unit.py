@@ -24,7 +24,7 @@ def testOne(filename):
 
     print raid.main(gcf)
 
-#testMultiple()
+testMultiple()
 #testOne('20674984470_1')
 #testOne('20675014450_1')
-testOne('20673569920_1')
+#testOne('20673569920_1')
