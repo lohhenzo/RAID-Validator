@@ -110,7 +110,7 @@ def validate(controllers):
         if RAIDLevel == True: pass    
         else: return RAIDLevel
         RAID = isValidRAID(controllers[0]['raids'])
-        if RAID == True: validate(controllers[1:])
+        if RAID == True: return validate(controllers[1:])
         else: return RAID
 
 def isValidRAIDLevel(raids):
